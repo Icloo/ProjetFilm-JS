@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#listefilm {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: black;
+   
+    
+    
+}
+
+#film {
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+
+}
+
+.affiche {
+    height: 50vh;
+    margin-bottom: 2vh;
+}
+
+#boutoncomm {
+    border-radius: 5px;
+    color: #a10000;
+    background :rgba(56, 50, 50, 0.83);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-size: xx-large;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-family: 'Knewave';
+    margin-bottom: 5vh;
+}
+
+#boutoncomm:hover {
+    background-color: #a10000;
+    color: rgba(56, 50, 50, 0.83);
+    transform: translate(-1px,-1px);
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.50);
+    transition: all 0.5s;
+}
+
+header {
+
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    
+}
+
+#imageheader {
+    height: 12vh;
+    
+}
+
+#boutonfav {
+    right: 1vw;
+    top: 5vh;
+    position: absolute;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: all .2s ease-in-out;
+    border-radius: 2rem;
+    font-family: 'Fredoka one', cursive;
+    font-size: x-large;
+}
+#boutonfav:hover {
+    right: 1vw;
+    top: 5vh;
+    position: absolute;
+    transform: scale(1.1);
+    
+}
+
+
+
+.fa-heart
+{
+    color: red;
+}
+.btn.btn-primary 
+{
+   background-color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: all .2s ease-in-out;
+    border-radius: none;
+    font-family: 'Fredoka', cursive;
+   
+    
+}
+.btn.btn-primary:hover
+{
+    background-color: red;
+}
+p 
+{
+    font-family: 'Source Sans 3', sans-serif;
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#genre
+{
+    text-align: center;
+}
+#langue
+{
+    text-align: center;
+}
+
+#titre {
+    height: 17vh;
+}
+
+#overview {
+    height: 35vh;
+    overflow: scroll;
+}
+
+.lescomms {
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 3vh;
+}
+
+.fa-star {
+    color: gold;
+}
+
+#affichergenrefav {
+    font-family: 'Fredoka', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+.lestitres
+{
+    font-family: 'Fredoka one', cursive;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    height: 5vh;
+    font-weight: 700;
+    background:linear-gradient(-120deg, #e50914, #221f1f, #f5f5f1);
+    
+}
+footer h5
+{
+    
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    #listefilm {
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    #overview {
+        height: 25vh;
+        overflow: scroll;
+    }
+
+    #affichergenrefav{
+        margin-left: 0;
+    }
+    header
+    {
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 285px) {
+    #imageheader {
+        height: 10vh;
+    }
+    #boutonfav {
+
+        font-size: large;
+    }
+}
